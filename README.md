@@ -102,7 +102,7 @@ The Twitter accounts we used in pretraining are posted in [account.csv](./data/r
 
 Once the tweets are crawled, process them as txt. files (like tweet_train.txt and tweet_dev.txt in ./data/raw/) where each line is a tweet. 
 
-Then, use the handcrafted information retriever to preprocess each politician's tweets so that we can know their statements in each policy area. In this way, we can get a hierarchical dictionary (politician: policy area: statements), where the keys are politicians and policy areas and the values are corresponding statements. 
+Then, use the handcrafted information retriever to preprocess each politician's tweets so that we can know their statements in each policy area. In this way, we can get a hierarchical dictionary (politician: policy area: statements), where the keys are politicians and policy areas and the values are corresponding statements. Name it objmem_tweet_pa_all.pkl and place it in the ./data/raw/ directory.
 
 2. prepare the samples for contrastive learning.
 
