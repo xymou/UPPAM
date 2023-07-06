@@ -64,14 +64,11 @@ StanceEval, FrameEval, BiasSeqEval and VoteSeqEval are provided as examples of s
 - Modify the engine.py to add corresponding tasks, nclasses, Eval method;
 - If you need Eval method other than those we provide, you also need to define the Eval method (like the python files we have in PoliEval/polieval/) and add it to the engine.py.
 
-We use **CongS** and **poldeb** as examples for illustration:
+We use [CongS](https://drive.google.com/file/d/1-iE1vM7K79bkw29Lr08mjeRTuNUfKdHf/view?usp=sharing) and [poldeb](https://drive.google.com/file/d/1YJK82hgBiWUTEnEQ6tGjHBx32pwdZUo9/view?usp=sharing) as examples for illustration. Download the datasets and unzip them into corresponding path.
 
 ```bash
-cd PoliEval/data/LEG_BIAS/cong_records/
-bash download_dataset.sh
-
-cd PoliEval/data/PUB_STANCE/poldeb/
-bash download_dataset.sh
+./PoliEval/data/LEG_BIAS/cong_records/
+./PoliEval/data/PUB_STANCE/poldeb/
 ```
 
 Then come back to the root directory, you evaluate UPPAM by fine-tuning on downstream datasets using our evaluation code. For example,
