@@ -106,7 +106,7 @@ Then, use the handcrafted information retriever to preprocess each politician's 
 
 2. prepare the samples for contrastive learning.
 
-Based on the structural and behavioral information we mentioned in our paper, we can get a series of triples. Concretely, we store "anchor-pos" pair in csv files (e.g., all_train.csv and all_dev.csv in ./data/raw/) and randomly sample negative samples during training.
+Based on the structural and behavioral information we mentioned in our paper, we can get a series of triples. Concretely, we store "anchor-pos" pair in csv files (like all_train.csv and all_dev.csv in ./data/raw/) and randomly sample negative samples during training.
 
 ### Training
 
