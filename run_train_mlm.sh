@@ -3,7 +3,7 @@ NUM_GPU=4
 PORT_ID=$(expr $RANDOM + 1000)
 export OMP_NUM_THREADS=1
 python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT_ID train_mlm.py \
-    --model_name_or_path /remote-home/xymou/bert/roberta-base/ \
+    --model_name_or_path roberta-base \
     --train_file ./data/raw/tweet_train.txt \
     --eval_file ./data/raw/tweet_dev.txt \
     --train_disk ./data/disk/mlm_train/ \
