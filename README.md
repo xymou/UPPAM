@@ -87,7 +87,7 @@ CUDA_VISIBLE_DEVICES=0 python evaluate.py \
     --fp16 \
     "$@"
 ```
-
+Notice that the eval task names should be aligned with those you define in engine.py.
 
 
 ## Train UPPAM
