@@ -1,6 +1,6 @@
 # UPPAM
 
-This repository is the implementation of our ACL 2023 paper [UPPAM: A Unified Pre-training Architecture for Political Actor Modeling based on Language](https://virtual2023.aclweb.org/paper_P1897.html). 
+This repository is the implementation of our ACL 2023 paper [UPPAM: A Unified Pre-training Architecture for Political Actor Modeling based on Language](https://aclanthology.org/2023.acl-long.670/)). 
 
 ## Quick Links
 
@@ -197,6 +197,20 @@ python -m torch.distributed.launch --nproc_per_node $NUM_GPU --master_port $PORT
 ## Citations
 
 Please consider citing this paper if you find this repository useful:
+```bash
+@inproceedings{mou-etal-2023-uppam,
+    title = "{UPPAM}: A Unified Pre-training Architecture for Political Actor Modeling based on Language",
+    author = "Mou, Xinyi  and
+      Wei, Zhongyu  and
+      Zhang, Qi  and
+      Huang, Xuanjing",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.acl-long.670",
+    pages = "11996--12012",
+}
 
-
-
+```
