@@ -77,7 +77,7 @@ class UPPAMUserEncoder(object):
         with torch.no_grad():
             for batch in tqdm(dataloader):
                 mem_input_ids = batch['mem_input_ids'].to(self.device)
-                mem_attention_mask = batch['mem_input_ids'].to(self.device)
+                mem_attention_mask = batch['mem_attention_mask'].to(self.device)
                 outputs = self.model(
                         input_ids = mem_input_ids,
                         attention_mask = mem_attention_mask,
